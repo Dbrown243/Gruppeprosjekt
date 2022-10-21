@@ -1,4 +1,4 @@
-# Gruppeprosjekt
+# Gruppeprosjekt part 1
 This project is for Øving 9: 
 Group has 4 members and each member will be assigned multiple tasks
 The project is due Friday 28.10.22 at 23:59
