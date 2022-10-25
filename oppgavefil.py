@@ -13,8 +13,17 @@ class Avtale:
     def __str__(self):
         return f"{self.tittel}, {self.sted}, {self.tidspunkt}, {self.varighet}"
 
+def ny_avtale():
+    tittel = input("skriv inn tittel ")
+    sted = input("skriv inn sted ")
+    tidspunkt = datetime.fromisoformat(input("skriv inn år, måned, tied "))
+    varighet = int(input("skriv varighet "))
+    return Avtale(tittel, sted, tidspunkt, varighet)
 
-   ' def ny_avtale(ny_avtale):'
+
+
+
+
 
 
 
