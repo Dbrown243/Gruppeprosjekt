@@ -21,6 +21,9 @@ def ny_avtale():
     return Avtale(tittel, sted, tidspunkt, varighet)
 
 
+    hdffggg
+
+
 
 
 
