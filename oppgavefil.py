@@ -21,12 +21,15 @@ def ny_avtale():
     return Avtale(tittel, sted, tidspunkt, varighet)
 
 
-    hdffggg
+def skrivutavtale(listemedavtaler):
+    listemedavtaler = [Avtale]
+    i = 0
+    for avtale in listemedavtaler:
+        print(i, avtale)
+        i += 1
 
-
-
-
-
+        
+    
 
 
 
