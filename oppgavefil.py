@@ -44,11 +44,18 @@ def lagre(avtaleliste):
 >>>>>>> Stashed changes
 
 # i
-def leser_file():
-    with open("avtale.txt", "r", encoding=("UTF-8")) as file:
-        
-        print("not done")
-    return 0
+def leser_file(filnavn = "avtaler.txt"):
+    liste = []
+    with open(filnavn, "r", encoding=("UTF-8")) as file:
+        file.readfile()
+        for avtale in avtaleliste:
+            kolonne = linje.strip().split(";")
+            avtale = kolonne[0]
+            varighet = int(kolonne[3])
+            tid = date.time.datetime(kolonne[2])
+            avtale = Avtale(avtale, kolonne[1], tid, varighet)
+            liste.append(avtale)
+    return liste
 
 
 # j
