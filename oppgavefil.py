@@ -18,18 +18,42 @@ def ny_avtale():
     sted = input("skriv inn sted ")
     tidspunkt = datetime.fromisoformat(input("skriv inn år, måned, tied "))
     varighet = int(input("skriv varighet "))
+    
     return Avtale(tittel, sted, tidspunkt, varighet)
 
 
 def skrivutavtale(listemedavtaler):
-    listemedavtaler = [Avtale]
+    # listemedavtaler = [Avtale]
     i = 0
     for avtale in listemedavtaler:
         print(i, avtale)
         i += 1
 
-        
-    
+
+def tarinnlister(listemedavtaler=list, tittel=str):
+    listemedstreng = []
+    for avtale in listemedavtaler:
+        indeks = avtale.tittel.find(tittel)
+        if avtale.tittel[indeks] == tittel:
+            listemedstreng.append(avtale)
+    return listemedstreng
+
+listemedavtaler=[]
+while True:
+    print("1 : ny_avtale")
+    print("2 : skrivutavtale")
+    print("3 : tarinnlister")
+    print("4 : avslutt")
+    menysystem = input("hva ønsker du pcen skal skrive ? ")
+    if menysystem == "1":  
+        ny_avtale()
+    elif menysystem == "2":   
+        skrivutavtale(listemedavtaler)
+    elif menysystem =="3":
+        tarinnlister(listemedavtaler=list, tittel=str)
+    elif print("4"):
+        break
+
 
 
 
