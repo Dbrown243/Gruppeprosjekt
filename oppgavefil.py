@@ -21,6 +21,7 @@ def ny_avtale():
     return Avtale(tittel, sted, tidspunkt, varighet)
 
 
+<<<<<<< Updated upstream
 def skrivutavtale(listemedavtaler):
     listemedavtaler = [Avtale]
     i = 0
@@ -30,7 +31,36 @@ def skrivutavtale(listemedavtaler):
 
         
     
+=======
 
+
+# h
+def lagre(avtaleliste):
+    with open("avtaler.txt", "w", encoding=("UTF-8")) as file:
+        for avtale in avtaleliste:
+            file.writelines(str(avtale) + "\n") 
+                
+
+>>>>>>> Stashed changes
+
+# i
+def leser_file():
+    with open("avtale.txt", "r", encoding=("UTF-8")) as file:
+        
+        print("not done")
+    return 0
+
+
+# j
+
+if __name__ == "__main__":
+    a = Avtale(1, 1, 1, 1)
+    b = Avtale(2, 2, 2, 2)
+    liste = [a, b]
+    
+    lagre(liste)
+
+#
 
 
 
