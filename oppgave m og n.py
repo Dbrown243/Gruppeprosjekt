@@ -5,23 +5,14 @@ Created on Thu Oct 20 16:30:16 2022
 
 @author: mahdi_nasser
 """
-class avtaler():
-    def __init__(self):
-        self.n =[]
-    def add(self, a):
-        return self.n.append(a)
-    def remove(self, b):
-        self.n.remove(b)
-    def dis(self):
-        return (self.n)
-    def __str__(self):
-        return (self,n)
+
     
 
+listeAvaler = list()
 
-obj= avtaler()
-
-
+def delete(liste, index):
+    liste.pop(index)
+    
 
 choice = 1
 while choice!=0:
@@ -30,13 +21,13 @@ while choice!=0:
     choice=int(input('enter choice: '))
     if choice==1:
         n=int(input('enter avtale to remove: '))
-        obj.remove(n)
-        print('List: ', obj.dis())
+        delete(listeAvaler, n)
+        skrivutavtale(listeavaler)
     elif choice==2:
         n=int(input('enter avtale to edit: '))
-        obj.replace(int(input('enter what you want to remove here: ')), int(input('enter your edit here: ')))
-        print('List: ', obj.dis())
-        
+        delete(listeAvaler, n)
+        listeAvaler.append(ny_avtale())
+        skrivutavtale(listeAvaler)
         
         
         
