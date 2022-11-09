@@ -24,7 +24,7 @@ def ny_avtale():
 def lagre(avtaleliste):
     with open("avtaler.txt", "w", encoding=("UTF-8")) as file:
         for avtale in avtaleliste:
-            file.writelines(str(avtale) + "\n") 
+            file.writelines(str(avtale.tittel) + ";" + str(avtale.sted) + ";" + str(avtale.tidspunkt) + ";" + str(avtale.varighet)) 
 
 def leser_file(filnavn = "avtaler.txt"):
     liste = []
