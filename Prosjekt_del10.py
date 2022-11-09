@@ -129,6 +129,24 @@ def skrivutliste(liste):
 
 
 # q)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #bare for å teste
 # if __name__ == "__main__":
 #     k1 = Kategori(0, "jobb", 3)
