@@ -90,9 +90,44 @@ def skrivutliste(liste):
 
 # g)
 
+class Sted:
+    def __init__(self, id,navn,gate, post,post_sted):
+        self.id = id 
+        self.navn = navn 
+        self.gate = gate
+        self.post = post 
+        self.post_sted= post_sted
+    
+
+
+    def __str__(self):
+        return f"{self.gate}, {self.post}, {self.post_sted}"
+
+
+        
+
+
+
+
+
+
+
 
 
 # h)
+def sted ():
+    id = input("skriv inn id ")
+    navn = input("skriv inn navn ")
+    gate = input("skrin inn adresse")
+    post= input("skriv inn postnummer")
+    post_sted = input("skriv inn post_sted")
+
+    sted_objekt = Sted(id,navn,gate, post,post_sted)
+    return sted_objekt
+
+
+
+
 
 
 
