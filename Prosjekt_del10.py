@@ -132,10 +132,19 @@ def sted ():
 
 
 # i)
+def lagre_stedliste(filename, stedliste):
+    with open("{filename}.txt", "w", encoding=("UTF-8")) as file:
+        for sted in stedliste:
+            file.writelines(str(sted.id) + ";" + str(sted.navn) + ";" + str(sted.gate) + ";" + str(sted.post) + ";" + str(sted.post_sted))
+
+
+
+
 
 
 
 # j)
+
 
 
 
