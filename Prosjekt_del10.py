@@ -145,7 +145,12 @@ def lagre_stedliste(filename, stedliste):
 
 # j)
 
+def skriv_ut_sted(stedet):
+    for sted in stedet:
+        print(sted)
 
+stedet = list(les_sted())
+skriv_ut_sted(stedet)
 
 
 # k)
