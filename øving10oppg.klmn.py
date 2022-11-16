@@ -87,16 +87,9 @@ while True:
 #n
  def ny_avtale():
      tittel = input("skriv inn tittel ")
-     
-     ## ------- ##
-     print index: sted
-     velg index
-     sted = liste_med_steder(index)
-     ## ------- ##
      skriv_ut_sted()
-     index = input("skriv inn index:[]")
+     index = int(input("skriv inn index:[]"))
      sted =liste_med_steder(index)
-     sted = input("skriv inn sted ")
      tidspunkt = datetime.fromisoformat(input("skriv inn år, måned, tid "))
      varighet = int(input("skriv varighet "))
      
